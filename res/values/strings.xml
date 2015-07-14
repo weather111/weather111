@@ -4,5 +4,6 @@
     <string name="app_name">AL</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="name">날씨</string>
 
 </resources>

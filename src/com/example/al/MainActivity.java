@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+// 프로젝트명: 축제&날씨
+// UI - 메인화면: 타이틀바에 현재날씨 아이콘표시/현재날씨,기온/시간대별날씨,기온/강수확률/습도/현재위치/새로고침버튼/하단메뉴4개(현재예보, 주간예보, 축제, 설정) 
 
 
 public class MainActivity extends ActionBarActivity {
@@ -33,3 +35,4 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
