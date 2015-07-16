@@ -368,6 +368,7 @@
         android:padding="15dp" >
 
         <ImageButton
+             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
@@ -381,12 +382,14 @@
             android:background="@drawable/app_calendar" />
 
         <ImageButton
+            android:id="@+id/festival1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
             android:background="@drawable/app_festival" />
 
         <ImageButton
+            android:id="@+id/setting1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.25"

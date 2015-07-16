@@ -57,12 +57,14 @@
          >
         
          <ImageButton
+        android:id="@+id/main3"     
         android:layout_width="match_parent"
         android:layout_height="match_parent"
        android:layout_weight="0.25"
        
         android:background="@drawable/app_time" />
          <ImageButton
+        android:id="@+id/weekend3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.25"
@@ -73,6 +75,7 @@
         android:layout_weight="0.25"
         android:background="@drawable/app_festival" />
          <ImageButton
+         android:id="@+id/setting3"    
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         

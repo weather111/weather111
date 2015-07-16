@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name="weekend"></activity>
+        <activity android:name="festival"></activity>
+        <activity android:name="setting"></activity>
     </application>
 
 </manifest>

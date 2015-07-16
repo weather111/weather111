@@ -29,7 +29,12 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
       
         ImageButton ib1 = (ImageButton)findViewById(R.id.weekend);
         ib1.setOnClickListener(this);
-        		
+        ImageButton ib2 = (ImageButton)findViewById(R.id.festival1);
+        ib2.setOnClickListener(this);
+        ImageButton ib3 = (ImageButton)findViewById(R.id.setting1);
+        ib3.setOnClickListener(this);
+        
+        
         /*
         bt.setOnClickListener(new OnClickListener() {
 		int count = 0;
@@ -110,7 +115,19 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 			
 			Toast.makeText(getApplicationContext(),"weekend",Toast.LENGTH_SHORT).show();
 			break;
+		case R.id.festival1:
+			Intent intent1 = new Intent(MainActivity.this,festival.class);
+			startActivity(intent1);
 			
+			Toast.makeText(getApplicationContext(),"festival",Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.setting1:
+			Intent intent2 = new Intent(MainActivity.this,setting.class);
+			startActivity(intent2);
+			
+			Toast.makeText(getApplicationContext(),"setting",Toast.LENGTH_SHORT).show();
+			break;
+
 		}
 		
 	}

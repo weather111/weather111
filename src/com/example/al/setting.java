@@ -1,22 +1,23 @@
 package com.example.al;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
+
+import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class weekend extends Activity {
+public class setting extends Activity {
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.weekendview);
+		setContentView(R.layout.setting);
 		// TODO Auto-generated method stub
-		final ImageButton ib = (ImageButton)findViewById(R.id.main2);
+		final ImageButton ib = (ImageButton)findViewById(R.id.main4);
         ib.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -24,11 +25,11 @@ public class weekend extends Activity {
 				// TODO Auto-generated method stub
 			switch(v.getId())
 			{
-			case R.id.main2:
-				Intent intent = new Intent(weekend.this,MainActivity.class);
+			case R.id.main4:
+				Intent intent = new Intent(setting.this,MainActivity.class);
 				startActivity(intent);
 				
-				Toast.makeText(getApplicationContext(),"weekend",Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(),"main",Toast.LENGTH_SHORT).show();
 				break;
 			
 			}
@@ -39,7 +40,7 @@ public class weekend extends Activity {
 			
         });
  
-        final ImageButton ib1 = (ImageButton)findViewById(R.id.festival2);
+        final ImageButton ib1 = (ImageButton)findViewById(R.id.weekend4);
         ib1.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -47,17 +48,17 @@ public class weekend extends Activity {
 				// TODO Auto-generated method stub
 				switch(v.getId())
 				{
-				case R.id.festival2:
-					Intent intent = new Intent(weekend.this,festival.class);
+				case R.id.weekend4:
+					Intent intent = new Intent(setting.this,weekend.class);
 					startActivity(intent);
 					
-					Toast.makeText(getApplicationContext(),"festival",Toast.LENGTH_SHORT).show();
+					Toast.makeText(getApplicationContext(),"weekend",Toast.LENGTH_SHORT).show();
 					break;
 				
 				}
 			}
         });
-        final ImageButton ib2 = (ImageButton)findViewById(R.id.setting2);
+        final ImageButton ib2 = (ImageButton)findViewById(R.id.festival4);
         ib2.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -65,11 +66,11 @@ public class weekend extends Activity {
 				// TODO Auto-generated method stub
 				switch(v.getId())
 				{
-				case R.id.setting2:
-					Intent intent = new Intent(weekend.this,setting.class);
+				case R.id.festival4:
+					Intent intent = new Intent(setting.this,festival.class);
 					startActivity(intent);
 					
-					Toast.makeText(getApplicationContext(),"setting",Toast.LENGTH_SHORT).show();
+					Toast.makeText(getApplicationContext(),"festival",Toast.LENGTH_SHORT).show();
 					break;
 				
 				}

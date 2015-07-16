@@ -589,24 +589,28 @@
                 android:padding="15dp" >
 
                 <ImageButton
+                    android:id="@+id/main2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:background="@drawable/app_time" />
 
                 <ImageButton
+                     android:id="@+id/weekend2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:background="@drawable/app_calendar" />
 
                 <ImageButton
+                    android:id="@+id/festival2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
                     android:background="@drawable/app_festival" />
 
                 <ImageButton
+                    android:id="@+id/setting2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.25"
