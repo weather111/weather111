@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -70,6 +71,24 @@ public class festival extends Activity {
 					startActivity(intent);
 					
 					Toast.makeText(getApplicationContext(),"setting",Toast.LENGTH_SHORT).show();
+					break;
+				
+				}
+			}
+        });
+        final Button ib3 = (Button)findViewById(R.id.spring);
+        ib3.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				switch(v.getId())
+				{
+				case R.id.spring:
+					Intent intent = new Intent(festival.this,festival_spring.class);
+					startActivity(intent);
+					
+					Toast.makeText(getApplicationContext(),"spring",Toast.LENGTH_SHORT).show();
 					break;
 				
 				}

@@ -25,6 +25,7 @@
         <activity android:name="weekend"></activity>
         <activity android:name="festival"></activity>
         <activity android:name="setting"></activity>
+        <activity android:name="festival_spring"></activity>
     </application>
 
 </manifest>

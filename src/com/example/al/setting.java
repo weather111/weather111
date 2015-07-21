@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -75,6 +76,28 @@ public class setting extends Activity {
 				
 				}
 			}
+        });
+        final ImageButton bt = (ImageButton)findViewById(R.id.settingback);
+        bt.setOnClickListener(new OnClickListener(){
+
+    		@Override
+    		public void onClick(View v) {
+    			// TODO Auto-generated method stub
+    		switch(v.getId())
+    		{
+    		case R.id.settingback:
+    			Intent intent = new Intent(setting.this,MainActivity.class);
+    			startActivity(intent);
+    			
+    			Toast.makeText(getApplicationContext(),"뒤로가기",Toast.LENGTH_SHORT).show();
+    			break;
+    		
+    		}
+    		
+    			
+    			
+    		}
+    		
         });
 	}
 
